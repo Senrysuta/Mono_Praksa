@@ -1,0 +1,15 @@
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\net6.0\ConsoleApplicationProject.exe
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\net6.0\ConsoleApplicationProject.deps.json
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\net6.0\ConsoleApplicationProject.runtimeconfig.json
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\net6.0\ConsoleApplicationProject.dll
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\bin\Debug\net6.0\ConsoleApplicationProject.pdb
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.csproj.AssemblyReference.cache
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.AssemblyInfoInputs.cache
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.AssemblyInfo.cs
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.csproj.CoreCompileInputs.cache
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.dll
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\refint\ConsoleApplicationProject.dll
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.pdb
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ConsoleApplicationProject.genruntimeconfig.cache
+C:\Users\Mono\source\repos\MonoPraksa_ConsoleApplicationProject\ConsoleApplicationProject\obj\Debug\net6.0\ref\ConsoleApplicationProject.dll
