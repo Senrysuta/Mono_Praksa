@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cars.WebAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -6,12 +7,19 @@ using System.Net.Http;
 using System.Reflection;
 using System.Web.Http;
 
+
 namespace Cars.WebAPI.Controllers
 {
     public class ValuesController : ApiController
     {
 
-        static List<string> cars = new List<string>();
+        static List<Vehicle> vehicles = new List<Vehicle>() 
+        {
+            new Vehicle(){ Id=1, Type="Car", Mark="BMW", Model="X6"},
+            new Vehicle(){ Id=2, Type="Car", Mark="Tesla", Model="S"},
+            new Vehicle(){ Id=3, Type="Truck", Mark="Mercedes", Model="Actros"},
+            new Vehicle(){ Id=4, Type="Car", Mark="Audi", Model="A6"},
+        };
         
         
 
@@ -19,36 +27,61 @@ namespace Cars.WebAPI.Controllers
         [HttpGet]
         public HttpResponseMessage GetAllCars()
         {
-            if (cars != null)
-                return Request.CreateResponse<List<string>>(HttpStatusCode.OK,cars);
+            if (vehicles.Count != 0)
+                return Request.CreateResponse<List<Vehicle>>(HttpStatusCode.OK,vehicles);
             else
                 return Request.CreateErrorResponse(HttpStatusCode.Forbidden, "No content");
+
+        }
+        [HttpGet]
+        public HttpResponseMessage GetCarsById(int id)
+        {
+            var carTemp = vehicles.SingleOrDefault(x=>x.Id == id);
+
+            if (carTemp == null)
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Bad request");
+            else
+                return Request.CreateResponse<Vehicle>(HttpStatusCode.OK, carTemp);
 
         }
 
 
         // POST api/values
         [HttpPost]
-        public HttpResponseMessage PostCar([FromBody] string model)
+        public HttpResponseMessage PostCar([FromBody] Vehicle car)
         {
-            cars.Add(model);
+            if (car == null)
+            {
+                return Request.CreateResponse<string>(HttpStatusCode.BadRequest, "Vehicle is null");
+            }
 
-            if (cars.Contains(model))
-                return Request.CreateResponse<string>(HttpStatusCode.OK, "Post successful");
+            vehicles.Add(car);
+
+            if (vehicles.Count == 0)
+                return Request.CreateResponse<string>(HttpStatusCode.Conflict, "Vehicle not added to list");
             else
-                return Request.CreateResponse<string>(HttpStatusCode.NoContent, "No content found");
+                return Request.CreateResponse<string>(HttpStatusCode.OK, "Post successful");
 
         }
 
         // PUT api/values/5
         [HttpPut]
-        public HttpResponseMessage PutCar(int id, [FromBody] string model)
+        public HttpResponseMessage PutCar(int id, [FromBody] Vehicle car)
         {
-            cars[id] = model;
+            var carTemp = vehicles.FindIndex(x => x.Id == id);
 
-            if (id == null)
+
+            if (car == null)
             {
-                Request.CreateErrorResponse(HttpStatusCode.BadRequest, "No id.");
+                Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Object not found");
+            }
+
+            vehicles[carTemp] = car;
+            
+
+            if (vehicles.Count == 0)
+            {
+                Request.CreateErrorResponse(HttpStatusCode.Gone, "List not found");
             }
 
             return Request.CreateResponse<string>(HttpStatusCode.OK, "Content updated");
@@ -58,16 +91,23 @@ namespace Cars.WebAPI.Controllers
         [HttpDelete]
         public HttpResponseMessage Delete(int id)
         {
-            cars.RemoveAt(id);
+            var carTemp = vehicles.SingleOrDefault(x => x.Id == id);
 
-            if (id == null)
+            if (carTemp == null)
             {
-                Request.CreateErrorResponse(HttpStatusCode.BadRequest, "No id.");
+                Request.CreateErrorResponse(HttpStatusCode.NotFound, "Vehilce not found");
             }
 
+            vehicles.Remove(carTemp);
+
+            if (vehicles.Count == 0)
+            {
+                Request.CreateErrorResponse(HttpStatusCode.Gone, "List not found");
+            }
+
+
+
             return Request.CreateResponse<string>(HttpStatusCode.OK, "Content updated");
-
-
         }
     }
 }
