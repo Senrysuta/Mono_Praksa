@@ -1,0 +1,8 @@
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\bin\Debug\Connection with server.exe.config
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\bin\Debug\Connection with server.exe
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\bin\Debug\Connection with server.pdb
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\obj\Debug\Connection with server.csproj.AssemblyReference.cache
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\obj\Debug\Connection with server.csproj.SuggestedBindingRedirects.cache
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\obj\Debug\Connection with server.csproj.CoreCompileInputs.cache
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\obj\Debug\Connection with server.exe
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Srijeda\SQL Ado.net\Connection with server\obj\Debug\Connection with server.pdb
