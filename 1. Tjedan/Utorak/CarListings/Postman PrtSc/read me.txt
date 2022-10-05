@@ -1,0 +1,4 @@
+Kod postanja novih podataka u listu mi posta null vrijednosti.
+Budući da se problem pojavio nakon što su svi otišli nisam stigao nikoga pitati.
+
+Voljan sam dovršiti zadatak kod kuće ako je to potrebno.
