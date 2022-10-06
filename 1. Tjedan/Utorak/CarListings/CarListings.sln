@@ -3,7 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars.WebAPI", "Cars.WebAPI\Cars.WebAPI.csproj", "{6BBF97BE-A7D1-44EC-9A71-A650C5589646}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarListings.WebAPI", "Cars.WebAPI\CarListings.WebAPI.csproj", "{6BBF97BE-A7D1-44EC-9A71-A650C5589646}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0CE8C497-F742-44BC-B8EB-11CE0C3EEE10} = {0CE8C497-F742-44BC-B8EB-11CE0C3EEE10}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarListings.Service", "CarListings.service\CarListings.Service.csproj", "{0CE8C497-F742-44BC-B8EB-11CE0C3EEE10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AABEA797-0A83-409B-A7F9-08491196BF58} = {AABEA797-0A83-409B-A7F9-08491196BF58}
+		{B29E8B6E-73C2-4D1B-A6A5-ED989E276712} = {B29E8B6E-73C2-4D1B-A6A5-ED989E276712}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarListings.Repository", "CarListings.Repository\CarListings.Repository.csproj", "{AABEA797-0A83-409B-A7F9-08491196BF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarListings.Service.Common", "CarListings.Service.Common\CarListings.Service.Common.csproj", "{B29E8B6E-73C2-4D1B-A6A5-ED989E276712}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +28,18 @@ Global
 		{6BBF97BE-A7D1-44EC-9A71-A650C5589646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BBF97BE-A7D1-44EC-9A71-A650C5589646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BBF97BE-A7D1-44EC-9A71-A650C5589646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE8C497-F742-44BC-B8EB-11CE0C3EEE10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE8C497-F742-44BC-B8EB-11CE0C3EEE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE8C497-F742-44BC-B8EB-11CE0C3EEE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE8C497-F742-44BC-B8EB-11CE0C3EEE10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AABEA797-0A83-409B-A7F9-08491196BF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABEA797-0A83-409B-A7F9-08491196BF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABEA797-0A83-409B-A7F9-08491196BF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABEA797-0A83-409B-A7F9-08491196BF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29E8B6E-73C2-4D1B-A6A5-ED989E276712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29E8B6E-73C2-4D1B-A6A5-ED989E276712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29E8B6E-73C2-4D1B-A6A5-ED989E276712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29E8B6E-73C2-4D1B-A6A5-ED989E276712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

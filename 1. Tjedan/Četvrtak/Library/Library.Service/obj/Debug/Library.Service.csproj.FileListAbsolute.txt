@@ -1,0 +1,13 @@
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Service.dll
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Service.pdb
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Model.dll
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Repository.dll
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Model.Common.dll
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Model.pdb
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Repository.pdb
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\bin\Debug\Library.Model.Common.pdb
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\obj\Debug\Library.Service.csproj.AssemblyReference.cache
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\obj\Debug\Library.Service.csproj.CoreCompileInputs.cache
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\obj\Debug\Library.Service.csproj.CopyComplete
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\obj\Debug\Library.Service.dll
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Service\obj\Debug\Library.Service.pdb

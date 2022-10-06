@@ -1,0 +1,6 @@
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Repository.Common\bin\Debug\Library.Repository.Common.dll
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Repository.Common\bin\Debug\Library.Repository.Common.pdb
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Repository.Common\obj\Debug\Library.Repository.Common.csproj.AssemblyReference.cache
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Repository.Common\obj\Debug\Library.Repository.Common.csproj.CoreCompileInputs.cache
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Repository.Common\obj\Debug\Library.Repository.Common.dll
+C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Repository.Common\obj\Debug\Library.Repository.Common.pdb
