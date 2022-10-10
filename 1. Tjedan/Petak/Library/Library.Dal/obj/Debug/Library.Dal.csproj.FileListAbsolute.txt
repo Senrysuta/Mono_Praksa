@@ -1,6 +1,0 @@
-C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Dal\bin\Debug\Library.Dal.dll
-C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Dal\bin\Debug\Library.Dal.pdb
-C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Dal\obj\Debug\Library.Dal.csproj.AssemblyReference.cache
-C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Dal\obj\Debug\Library.Dal.csproj.CoreCompileInputs.cache
-C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Dal\obj\Debug\Library.Dal.dll
-C:\Users\josip\Documents\GitHub\Mono_Praksa\1. Tjedan\Četvrtak\Library\Library.Dal\obj\Debug\Library.Dal.pdb
