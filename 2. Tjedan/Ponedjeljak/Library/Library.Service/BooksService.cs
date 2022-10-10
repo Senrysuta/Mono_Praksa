@@ -33,6 +33,27 @@ namespace Library.Service
 
         public async Task<bool> UpdateBookAsync(int id, Book book)
         {
+            Book bookTemp = new Book();
+            bookTemp = await bookRepository.GetBookByIdAsync(id);
+
+            if (book.Title == null || book.Title == "")
+            {
+                book.Title = bookTemp.Title;
+            }
+            else if(book.PublishYear == null || book.PublishYear == 0)
+            {
+                book.PublishYear = bookTemp.PublishYear;
+            }
+            else if(book.OriginalLanguage == null || book.OriginalLanguage == "")
+            {
+                book.OriginalLanguage = bookTemp.OriginalLanguage;
+            }
+            else if(book.ISBN == null || book.ISBN == "")
+            {
+                book.ISBN = bookTemp.ISBN;
+            }
+
+
             return await bookRepository.UpdateBookAsync(id,book);
         }
     }

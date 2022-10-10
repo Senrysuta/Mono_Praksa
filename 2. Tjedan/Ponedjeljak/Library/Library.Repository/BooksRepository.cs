@@ -70,7 +70,8 @@ namespace Library.Repository
                 var cmd = new SqlCommand();
 
                 cmd.Connection = connection;
-                cmd.CommandText = $"SELECT * FROM Book WHERE BookID = {id}";
+                cmd.CommandText = $"SELECT * FROM Book WHERE BookID = @BookID";
+                cmd.Parameters.AddWithValue("BookID",id);
 
                 SqlDataReader dataReader = await cmd.ExecuteReaderAsync();
 
@@ -115,8 +116,17 @@ namespace Library.Repository
             try
             {
 
-                string command = $"INSERT INTO Book VALUES({book.BookId}, {book.AuthorId}, '{book.Title}', {book.PublishYear}, '{book.OriginalLanguage}', '{book.ISBN}')";
+                string command = $"INSERT INTO Book VALUES(@BookID, @AuthorId, @Title, @PublishYear, @OriginalLanguage, @ISBN";
                 var cmd = new SqlCommand(command, connection);
+
+                cmd.Parameters.AddWithValue("@BookID",book.BookId);
+                cmd.Parameters.AddWithValue("@AuthorID",book.AuthorId);
+                cmd.Parameters.AddWithValue("@Title",book.Title);
+                cmd.Parameters.AddWithValue("@PublishYear",book.PublishYear);
+                cmd.Parameters.AddWithValue("@OriginalLanguage",book.OriginalLanguage);
+                cmd.Parameters.AddWithValue("@ISBN",book.ISBN);
+
+
 
 
                 await cmd.ExecuteNonQueryAsync();
@@ -141,7 +151,8 @@ namespace Library.Repository
 
             try
             {
-                var cmd = new SqlCommand($"DELETE FROM Book WHERE BookID = {id}", connection);
+                var cmd = new SqlCommand($"DELETE FROM Book WHERE BookID = @BookId", connection);
+                cmd.Parameters.AddWithValue("BookID",id);
 
 
                 await cmd.ExecuteNonQueryAsync();
@@ -171,31 +182,21 @@ namespace Library.Repository
                 var cmd = new SqlCommand();
 
                 cmd.Connection = connection;
-                cmd.CommandText = $"SELECT * FROM Book WHERE BookID = {id}";
-
-                SqlDataReader dataReader = await cmd.ExecuteReaderAsync();
-
-
-                await dataReader.ReadAsync();
-
-                Book booksData = new Book(
-                    Convert.ToInt16(dataReader[0].ToString()),
-                    Convert.ToInt16(dataReader[1].ToString()),
-                    dataReader[2].ToString(),
-                    Convert.ToInt16(dataReader[3].ToString()),
-                    dataReader[4].ToString(),
-                    dataReader[5].ToString()
-                    );
-
-                dataReader.Close();
-
+                
 
                 cmd.CommandText = $"UPDATE Book SET " +
-                    $"Title = '{book.Title}', " +
-                    $"PublishYear = {book.PublishYear}," +
-                    $"OriginalLanguage = {book.OriginalLanguage}" +
-                    $"ISBN = {book.ISBN}" +
-                    $"WHERE BookID = {id}";
+                    $"Title = @Title, " +
+                    $"PublishYear = @PublishYear," +
+                    $"OriginalLanguage = @OriginalLanguage" +
+                    $"ISBN = @ISBN" +
+                    $"WHERE BookID = @BookID";
+
+                cmd.Parameters.AddWithValue("@BookID",book.BookId)
+                cmd.Parameters.AddWithValue("@Title",book.Title);
+                cmd.Parameters.AddWithValue("@PublishYear",book.PublishYear);
+                cmd.Parameters.AddWithValue("@OriginalLanguage",book.OriginalLanguage);
+                cmd.Parameters.AddWithValue("@ISBN",book.ISBN);
+
 
 
                 await cmd.ExecuteNonQueryAsync();
