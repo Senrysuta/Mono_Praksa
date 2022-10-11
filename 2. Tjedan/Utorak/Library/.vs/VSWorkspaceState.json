@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Library.Service",
+    "\\Library.Service.Common",
+    "\\Library.WebAPI",
+    "\\Library.WebAPI\\Controllers"
+  ],
+  "SelectedNode": "\\Library.WebAPI\\Controllers\\AuthorsController.cs",
+  "PreviewInSolutionExplorer": false
+}
