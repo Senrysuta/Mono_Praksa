@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testna stranica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="scrpit" href="scrpit.js">
+</head>
+<body>
+    <div class="background">
+    <div class="heading">   
+        <div class="title"><h1>Online Library</h1></div>
+        <br>
+        <div>
+            <p><a href="index.html">Home Page</a> | <a href="forms.html"> Book list  </a>|</p>
+            
+        </div>
+    </div>
+    </div>
+
+
+    
+    <br>
+
+    <form action="" class="bookForm">
+        <label for="authorFirstName">Author First Name:</label>
+        <input type="text" name="authorFirstName" id="authorFirstName"><br>
+        <label for="authorLastName">Author Last Name:</label>
+        <input type="text" name="authorLastName" id="authorLastName"><br>
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" name="bookTitle" id="bookTitle"><br>
+        <label for="publishYear">Year of publishing:</label>
+        <input type="datetime-local" name="publishYear" id="publishYear"><br>
+        <input type="button" value="Save a book!" onclick="Save()">
+    </form>
+
+    <br>
+
+    <div class="dropdown">
+    Show/hide books <br>
+    <select name="books" id="visibility">
+        <option value="0">Select</option>
+        <option value="1">Hide</option>
+        <option value="2">Show</option>
+    </select>   
+    </div> 
+
+    <ul class="listings" id="bookList">
+
+    </ul>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
