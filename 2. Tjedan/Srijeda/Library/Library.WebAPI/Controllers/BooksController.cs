@@ -27,8 +27,8 @@ namespace Library.WebAPI.Controllers
             _mapper = mapper;
         }
 
-
-        /*[HttpGet]
+        [Route("api/Books/GetAllBooks")]
+        [HttpGet]
         public async Task<HttpResponseMessage> GetAllBooksAsync()
         {
 
@@ -44,7 +44,7 @@ namespace Library.WebAPI.Controllers
             else
                 return Request.CreateErrorResponse(HttpStatusCode.Forbidden, "No content");
 
-        }*/
+        }
 
         [HttpGet]
         public async Task<HttpResponseMessage> FindAsync(int yearmin=0, int yearmax=2022,string title="", string lang="", string sortBy="BookID", string order="ASC", int pageNumber = 1, int pageSize = 2)

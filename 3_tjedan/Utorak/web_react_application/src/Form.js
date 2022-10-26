@@ -32,6 +32,7 @@ function Form(props) {
             <input type="button" value={"Submit your answear"} onClick={transferValue} placeholder="Submit your name"></input>
         </form>
       </div>
+      
     )
 }
 
